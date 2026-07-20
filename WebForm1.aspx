@@ -42,10 +42,32 @@
                         Width="500px">
                     </asp:AdRotator>
 
+                    <br />
+
                 </ContentTemplate>
             </asp:UpdatePanel>
 
         </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <br />
+        <br />
+        <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
 
     </form>
 </body>

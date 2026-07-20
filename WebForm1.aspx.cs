@@ -23,5 +23,27 @@ namespace Web_Practical
         {
             AdRotator1.DataBind();
         }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //String file_name = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
+            //FileUpload1.SaveAs(Server.MapPath("~/img/" + file_name));
+            //Label7.Text = "File uploaded successfully!";
+
+            if (FileUpload1.HasFile)
+            {
+
+                String path = Server.MapPath("~/img/");
+                String filename = FileUpload1.FileName;
+                FileUpload1.SaveAs(path + filename);
+                Label7.Text = "File uploaded successfully!";
+            }
+            else
+            {
+                Label7.Text = "Please select a file to upload.";
+            }
+
+        }
     }
 }
